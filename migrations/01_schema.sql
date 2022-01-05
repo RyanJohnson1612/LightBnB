@@ -25,6 +25,7 @@ CREATE TABLE properties (
   active BOOLEAN NOT NULL DEFAULT TRUE,
   owner_id INTEGER REFERENCES users(id) ON DELETE CASCADE
 );
+
 CREATE TABLE reservations (
   id SERIAL PRIMARY KEY NOT NULL,
   start_date DATE NOT NULL,
